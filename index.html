@@ -4,6 +4,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title> Solo Project 1 </title>
     <link rel="stylesheet" type="text/css" href="vendor/fontello-9f37fb7e/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -110,7 +111,7 @@
 					</div>
 					
 					<div class="chart">	
-						<img  class ="earningChart" src="imges\earningChart.png" alt=''>
+                        <canvas id="myChart"></canvas>
 					</div>	
 				</div>
 			</section>
@@ -210,6 +211,8 @@
 		</section>
       </section>        
     </div>
-  </section>  
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js"></script>  
 </body>
 </html>
