@@ -1,11 +1,11 @@
+@import "../node_modules/include-media/dist/_include-media.scss";
 @import "variables";
 @import "mixins";
-
-/* Components */
-@import "components/form_field";
-
-/* Sections */
-@import "section/registration_form";
-
-/* Pages / Views */
-@import "pages/registration";
+@import "normalize";
+@import "layout";
+@import "components";
+@import "sections";
+		
+.index {
+	background-color: $bgTopButton-color;
+}

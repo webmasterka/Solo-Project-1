@@ -1,0 +1,22 @@
+a {
+    &.largeLink {
+        font: $largeLink-font;
+    }
+    &.smallLink {
+        font: $smallLink-font;
+    }
+    color: $link-color;
+    &:hover {
+        color: $orangeBtn-color;
+    }
+    text-decoration: none;
+}
+
+i {
+    display: inline-block;
+    color: $link-color;
+    
+    &:hover {
+        color: $orangeBtn-color;
+    }
+}

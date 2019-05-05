@@ -1,0 +1,41 @@
+.leftColumn__leftNavbar {
+     
+    .leftNavbar__menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        &-item {
+            width: 100%;
+            border-left: 4px solid $tableDigit-color;
+            &-link {
+                display: flex;
+                width: 100%;
+                height: auto;
+                color: $hamburger-color;
+                align-items: center;
+                font: $text-font;
+
+                &-icon {
+                    margin: 0 15px;
+                    color: $hamburger-color;
+                    
+                    &--links {
+                        font-size: 0.75em;
+                    }
+                }
+            }
+
+            &:hover {
+                border-left: 4px solid $orangeBtn-color;
+                background-color: $bgMainMenuHover;
+                .leftNavbar__menu-item-link {
+                    color: $btnFont-color;
+                    &-icon {
+                        color: $btnFont-color;
+                    }
+                }
+            }
+        }
+    }
+}

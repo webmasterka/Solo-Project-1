@@ -1,0 +1,39 @@
+
+.positiveNotification, .negativeNotification {
+    position: relative;
+    margin: 2px 0;
+    padding: 0 15px;
+    max-width: 267px;
+    height: 40px;
+    display: flex;
+    background-color: $positiveNotification-color;
+    justify-content: space-between;
+    align-items: center;
+    
+    & > i {
+        margin: 0 0 0 5px;
+        display: inline-flex;
+        background-color: $btnFont-color;
+        &.positive, &.negative {
+            position: absolute;
+        }
+    }
+
+    & > P {
+        margin: 0 15px;
+        padding: 0 0 0 10px;
+        color: $btnFont-color;
+    }
+
+    &:hover {
+        background-color: $positiveNotificationHover-color;
+    }
+}
+
+.negativeNotification {
+    background-color: $negativeNotification-color;
+
+    &:hover {
+        background-color: $negativeNotificationHover-color;
+    }
+}

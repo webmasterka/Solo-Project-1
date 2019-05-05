@@ -1,0 +1,51 @@
+.index__subpage {
+    @extend %subpage;
+    @extend .index__subpage--personalData;
+    @extend .index__subpage--postback;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    &--login {
+        width: 720px;
+        height: 190px;
+        padding: 20px 0;
+
+        .subpage__form {
+            &-pieceOfTheForm {
+                padding: 20px 45px;  
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                .inputPassContainer {
+                    i {
+                        color: $headers-color;
+                        &.icon-password {
+                            display: block;
+                            width: 30px;
+                        }
+                    }
+
+                    input {
+                        padding: 10px 15px;
+                    }
+                }
+
+                &-groupContainer {
+                    padding: 0 10px;
+                }
+
+                button {
+                    width: 100%;
+                }
+
+
+            }
+
+            
+        }        
+    }
+}    

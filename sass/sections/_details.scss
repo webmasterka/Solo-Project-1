@@ -1,0 +1,41 @@
+.index__subpage {
+    @extend %subpage;
+
+    .scroll-wrapper {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            width: 16px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: $walletP-color;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $disabledBtn-color;
+            outline: 1px solid slategrey;
+        }
+    }
+
+    &--details, &--payout {
+        
+
+        .subpage__table {
+            padding: 20px;
+
+            &-tbody-tr-td-tdContainer {
+                // justify-content: center;
+            }
+        }
+
+        .subpage__paginationContainer {
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+} 

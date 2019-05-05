@@ -1,0 +1,42 @@
+.form__btn {
+    margin: 0 15px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: none;
+    font: $btn-font;
+    color: $btnFont-color;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form__btn--greyBtn {
+    @extend .form__btn;
+    background-color: $greyBtn-color;
+    &:hover {
+        background-color: $greyBtnHover-color;
+    }
+}
+
+.form__btn--orangeBtn {
+    @extend .form__btn;
+    background-color: $orangeBtn-color;
+    &:hover {
+        background-color: $orangeBtnHover-color;
+    }
+}   
+
+
+.form__btn--disabledBtn {
+    @extend .form__btn;
+    background-color: $disabledBtn-color;
+    &-icon-links, i {
+        margin: 0 15px 0 0;
+        color: $btnFont-color;
+        font-size: 14px;
+    }
+    &:hover {
+        cursor: default;
+    }
+}

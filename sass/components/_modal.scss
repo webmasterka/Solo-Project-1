@@ -1,0 +1,66 @@
+.overlay {
+    display: none;
+	position: fixed;
+	top: 0;
+    left: 0;
+    z-index: 900;
+	width: 100%;
+	height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+	
+	&.showM {
+		display: flex;
+	}
+
+    .modal {
+        margin: 0;
+        padding: 0 0 20px 0;
+        display: none;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+
+        @include media ('>phone', '<desktop') {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+    
+        &.showM {
+            display: block;
+        }
+    }
+
+    .index__subpage {
+
+        @include media ('>phone', '<tablet') {
+            padding: 10px
+        }
+
+        &-header {
+            position: relative;
+
+            h1 {
+                padding-right: 40px;
+                width: 100%;
+            }
+    
+            &-icon {
+                position: absolute;
+                z-index: 2;
+                width: 15px;
+                height: 15px;
+                right: 15px;
+                top: 23px;
+                cursor: pointer;
+                border-bottom: 2px solid $disabledBtn-color;
+                background-color: $headers-color;
+            }
+        }
+    }
+    
+}

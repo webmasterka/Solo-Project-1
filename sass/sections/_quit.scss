@@ -1,0 +1,24 @@
+.index__subpage {
+    @extend %subpage;
+    @extend .index__subpage--personalData;
+    @extend .index__subpage--postback;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    &--quit {
+        width: 360px;
+        height: 150px;
+        
+        .subpage__form {
+            &-pieceOfTheForm {
+                padding: 20px 15px;   
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }        
+    }
+}    

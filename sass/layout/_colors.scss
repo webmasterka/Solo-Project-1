@@ -1,0 +1,56 @@
+@import "../variables";
+
+span {
+    margin: 1px;
+    height: 27px;
+    display: flex;
+    color: $btnFont-color;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    &.text-color {
+        background-color: $text-color;
+    }
+    &.greyBtn-color {
+        background-color: $greyBtn-color;
+    }
+    &.greyBtnHover-color {
+        background-color: $greyBtnHover-color;
+    }
+    &.disabledBtn-color {
+        background-color: $disabledBtn-color;
+    }
+    &.bgTopButton-color {
+        background-color: $bgTopButton-color;
+    }
+    &.orangeBtnHover-color {
+        background-color: $orangeBtnHover-color;
+    }
+    &.orangeBtn-color {
+        background-color: $orangeBtn-color;
+    }
+    &.greenCheckBox-color {
+        background-color: $greenCheckBox-color;
+    }
+    &.positiveNotificationHover-color {
+        background-color: $positiveNotificationHover-color;
+    }
+    &.positiveNotification-color {
+        background-color: $positiveNotification-color;
+    }
+    &.negativeNotificationHover-color {
+        background-color: $negativeNotificationHover-color;
+    }
+    &.negativeNotification-color {
+        background-color: $negativeNotification-color;
+    }
+    &.link-color {
+        background-color: $link-color;
+    }
+    &.redBorderForm-color {
+        background-color: $redBorderForm-color;
+    }
+    &.circleTab-color {
+        background-color: $circleTab-color;
+    }
+}

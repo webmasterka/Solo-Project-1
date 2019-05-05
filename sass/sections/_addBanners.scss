@@ -1,0 +1,29 @@
+.index__subpage {
+    @extend %subpage;
+    @extend .index__subpage--personalData;
+    @extend .index__subpage--postback;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    &--addBanners {
+        width: 1074px;
+        height: 764px;
+
+        .subpage__form {
+            &-pieceOfTheForm {
+                input {
+                    padding: 10px 15px;
+                }
+                
+                &-scrollContainer {
+                    height: 320px;
+                }
+            
+            }
+
+            
+        }
+    }
+}    

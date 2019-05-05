@@ -1,0 +1,42 @@
+.subpage__pageHeader, h3 {
+    font: $pageHeader-font;
+    text-transform: uppercase;
+    color: $headers-color;
+}
+
+.subpage__componentHeader, h2 {
+    font: $sectionHeader-font;
+    color: $headers-color;
+    strong {
+        color: $redBorderForm-color;
+        text-transform: uppercase;
+    }
+}
+
+h3 {
+    font: $compoHeader-font;
+}
+
+h4 {
+    margin: 20px 0 5px 0;
+    font: $nameUser-font;
+    color: $text-color;
+}
+
+.messanger__title {
+    font: $manager-font;
+	color: $manager-color;
+	text-transform: uppercase;
+}
+
+h6 {
+    margin: 0 20px 0 0;
+	color: $walletP-color;
+	font: $wallet-font;
+}
+
+.ordinaryText {
+    font: $text-font;
+    color: $text-color;
+}
+

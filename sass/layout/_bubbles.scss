@@ -1,0 +1,49 @@
+%bubble {	
+    margin: 10px 0;
+    padding: 0 15px;
+    display: inline-block;
+    position: relative;
+    font: $text-font;
+    border-radius: 3px;
+}
+
+.bubble1 {
+    @extend %bubble;
+    color: $text-color;
+    background-color: $bgTab-color;
+    border-top-left-radius: 0;
+}
+
+.bubble2 {
+    @extend %bubble;
+    color: $btnFont-color;
+    background-color: $greyBtnHover-color;
+    border-bottom-right-radius: 0;
+}
+
+%bubbleArrow {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;	
+}
+
+.bubbleArrowTop:before {
+    @extend %bubbleArrow;
+    border-left: 5px solid $bgTab-color;
+    border-right: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid $bgTab-color;
+    left: 0;
+    top: -9px;
+}
+
+.bubbleArrowBottom:before {
+    @extend %bubbleArrow;
+    border-left: 5px solid transparent;
+    border-right: 5px solid $greyBtnHover-color;
+    border-top: 5px solid $greyBtnHover-color;
+    border-bottom: 5px solid transparent;
+    right: 0;
+    bottom: -9px;
+}

@@ -1,0 +1,93 @@
+%icon {
+    display: inline-block;
+    background-color: $link-color;   
+    -webkit-mask-size: cover;
+    mask-size: cover; 
+    &:hover{
+        background-color: $orangeBtn-color;
+    }
+}
+
+@mixin icons($width,$height,$url) {
+    @extend %icon;
+    width: $width;
+    height: $height;
+    -webkit-mask: url($url) no-repeat 100% 100%;
+    mask: url($url) no-repeat 100% 100%;
+}
+
+.show {
+    @include icons(13px,13px,'/images/show.svg');
+} 
+
+.links {
+    @include icons(16px,8px,'/images/links.svg');
+}
+
+.keyPassword {
+    @include icons(21px,12px,'/images/password.svg');
+}
+
+.calendar {
+    @include icons(13px,13px,'/images/calendar.svg');
+}
+
+.negative {
+    @include icons(15px,15px,'/images/negative.svg');
+}
+
+.positive {
+    @include icons(15px,15px,'/images/positive.svg');
+}
+
+.close {
+    @include icons(12px,12px,'/images/close.svg');
+}
+
+.notification {
+    @include icons(18px,20px,'/images/notification.svg');
+}
+
+.general {
+    @include icons(16px,15px,'/images/general.svg');
+}
+
+.details {
+    @include icons(14px,13px,'/images/details.svg');
+}
+
+.banners {
+    @include icons(14px,13px,'/images/banners.svg');
+}
+
+.personalData {
+    @include icons(9px,13px,'/images/personaldata.svg');
+}
+
+.payout {
+    @include icons(13px,13px,'/images/payout.svg');
+}
+
+.postback {
+    @include icons(13px,14px,'/images/postback.svg');
+}
+
+.wallet {
+    @include icons(17px,18px,'/images/wallet.svg');
+}
+
+.profile {
+    @include icons(17px,17px,'/images/profile.svg');
+}
+
+.quit {
+    @include icons(19px,15px,'/images/quit.svg');
+}
+
+.refresh {
+    @include icons(15px,15px,'/images/refresh.svg');
+}
+
+.trash {
+    @include icons(14px,15px,'/images/trash.svg');
+}

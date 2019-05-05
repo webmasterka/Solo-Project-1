@@ -1,0 +1,51 @@
+// ======= section general =======
+%subpage {
+    margin: 15px;
+    padding: 0 0 20px 0;
+    background-color: $btnFont-color;
+    justify-content: center;
+}
+
+.index__subpage {
+    @extend %subpage;
+
+    &--general {
+        margin: 75px 15px 15px 15px;
+
+        .subpage__table {
+            margin: 20px 0;
+
+            @include media ('>phone', '<tablet') {
+                margin: 10px 0;
+            }
+
+            &--left {
+                padding-right: 30px;
+
+                @include media ('>phone', '<tablet') {
+                    padding: 0 10px;
+                }
+            }
+
+            &--right {
+                padding-left: 30px;
+
+                @include media ('>phone', '<tablet') {
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        h2, .subpage__tabContainer {
+            @include media ('>phone', '<tablet') {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .subpage__pageHeader {
+        padding: 0 15px;
+        border-bottom: 2px solid $disabledBtn-color;
+    }
+    
+}

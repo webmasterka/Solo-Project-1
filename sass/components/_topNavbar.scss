@@ -1,0 +1,53 @@
+.index__topNavbar {
+    width: 83.2%;
+    height: 60px;
+    background-color: $btnFont-color;
+    display: flex;
+    top: 0;
+    right: 0;	
+    position: fixed;
+    justify-content: flex-end;
+    border-bottom: 2px solid $disabledBtn-color;
+
+    .topNavbar__topMenuButton {             
+
+        &-body {
+                                                
+            &-icon {
+                background-color: $headers-color;
+            }
+            
+            &-arrowDown {						
+                @extend %arrowBody;
+                margin: 14px 0 20px 0;
+                padding: 8px 0 0 8px;
+                width: 8px;
+                height: 8px;
+                // -webkit-transform: rotate(225deg);
+                -ms-transform: rotate(225deg);
+                transform: rotate(225deg);
+            }
+            
+            &-nameProfile {
+                @extend .smallLink;
+            }
+
+            &-notOnlyIcons {
+                padding: 0 20px 0 0;
+            }
+        }
+
+        &:first-child {
+            &-body {
+                border-left: 2px solid $disabledBtn-color;
+            }
+        }
+
+        &:last-child {
+            &-body {
+                border-right: 2px solid $disabledBtn-color;
+            }
+        }
+    }
+
+}

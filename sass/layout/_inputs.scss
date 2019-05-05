@@ -1,0 +1,121 @@
+form {	
+	textarea, input, .inputPassContainer {
+		margin: 0 0 10px 0;
+		padding: 15px;
+		// min-width: 150px;
+		min-height: 120px;
+		font: $textInput-font;
+		color: $text-color;
+		border-radius: 3px;
+		border: 1px solid $disabledBtn-color;
+		&:hover {
+			border: 1px solid $greyBorderForm-color;
+			color: $text-color;
+		}
+		&:focus {
+			color: $text-color;
+			border: 1px solid $disabledBtn-color;
+			outline: none;
+		}
+		&::placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder {
+			color: $headers-color;
+			&:hover { 
+				color: red; 
+			}
+		}
+	}
+
+	input {
+		min-height: 30px;
+		
+	}
+
+	.inputPassContainer {
+		padding: 0 15px;
+		width: auto;
+		height: auto;
+		min-width: 40px;
+		min-height: 30px;
+		display: flex;
+		cursor: default;
+		font: $text-font;
+		justify-content: start;   
+		align-items: center;
+
+		input {
+			margin: 0;
+			border: none;
+		}
+
+		.keyPassword {
+			background-color: $headers-color;
+		}
+
+		&:hover {
+			.keyPassword {
+				background-color: $text-color;
+			}	
+		}
+	}
+
+	.invalid {
+		border: 2px solid $redBorderForm-color;
+	}
+
+	.inputListContainer {
+		padding: 0 15px 0 0;
+		width: auto;
+		height: auto;
+		min-width: 40px;
+		min-height: 30px;
+		display: flex;
+		cursor: default;
+		font: $text-font;
+		justify-content: start;   
+		align-items: center;
+		border-radius: 3px;
+		border: 1px solid $disabledBtn-color;
+            
+		&:hover {
+			border: 1px solid $greyBorderForm-color;
+			color: $text-color;
+        }
+            
+		&:focus {
+			color: $text-color;
+			border: 1px solid $disabledBtn-color;
+			outline: none;
+        } 
+
+		input {
+			margin: 0;
+			width: 100%;
+			border: none;
+		}
+
+
+		&-list {
+			&::-webkit-inner-spin-button, &::-webkit-outer-spin-buttonm, &::-webkit-calendar-picker-indicator {
+				display: none;
+				-webkit-appearance: none;
+			}
+		}
+
+		&-arrowDown {
+			margin: 0 0 0 10px;
+			display: inline-flex;
+			width: 6px;
+			height: 6px;
+			border: solid $tableArrowUp-color;
+			cursor: pointer;
+			border-color: $text-color;
+			border-width: 1px 0 0 1px;
+			-webkit-transform: rotate(225deg);
+			-ms-transform: rotate(225deg);
+			transform: rotate(225deg);
+		}
+		
+	}
+
+	
+}

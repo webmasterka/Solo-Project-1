@@ -1,0 +1,17 @@
+//========= index - left navbar ============
+.leftColumn {	 
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    position: fixed;
+    background-color: $tableDigit-color;
+    z-index: 10;
+}
+
+.showNavbars {
+    display: none;
+    
+}
+

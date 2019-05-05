@@ -1,0 +1,47 @@
+.sliderContainer {
+    
+    &-range {
+        display: flex;
+        justify-content: space-between;
+
+        &-start, &-end {
+            margin: 0;
+            padding: 0;
+            color: $hamburger-color;
+        }
+    }
+
+    &-allRange {
+        padding: 0 10px;
+        position: relative;
+        height: 7px;
+        background-color: $disabledBtn-color;
+    }
+
+    &-currentRange {
+        padding: 0 10px;
+        width: 70%;
+        height: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $orangeBtn-color;
+    }
+
+    &-triangleUp {
+        margin: 0 0 0 68%;
+        width: 0;
+        height: 0;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 25px solid $orangeBtn-color;
+    }
+
+    &-chosenRange {
+        padding: 0 0 0 40%;
+        text-align: left;
+        text-transform: none;
+        color: $tableDigit-color;
+
+    }
+}

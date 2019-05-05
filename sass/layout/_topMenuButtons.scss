@@ -1,0 +1,77 @@
+.topMenuButton {
+	position: relative;
+    display: flex;
+            
+    &-circleButton {
+        position: absolute;
+        top: 18px;
+        left: 33px;
+        width: 8px;
+        height: 8px;
+        z-index: 1;
+        border-radius: 50%;
+        background-color: $orangeBtn-color;
+    }
+
+    &-body {
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+		border-left: 4px solid $tableDigit-color;
+        border-right: none;
+        border-bottom: none;
+        background-color: $tableDigit-color;
+        
+		&-icon {
+            margin: 20px;
+            display: inline-flex;
+            color: $headers-color;
+            
+            &--notification {
+                @extend .notification;
+                height: 20px;	 	
+            }
+           
+            &--wallet {
+                @extend .wallet;
+            }
+           
+            &--profile {
+                @extend .profile;
+            }
+
+            &--quit {
+                @extend .quit;
+            }
+        }
+
+        &:hover {
+            border-left: 4px solid $orangeBtn-color;
+            background-color: $bgMainMenuHover;
+			.topMenuButton-body-icon {
+                color: $btnFont-color;
+            }
+        }
+    }
+
+    &--onTopNavbar {
+        &-circleButton {
+            left: 31px;
+        }
+
+        &-body {
+            border-left: 1px solid $disabledBtn-color;
+			border-right: 1px solid $disabledBtn-color;
+            border-bottom: 2px solid $disabledBtn-color;
+            background-color: $btnFont-color;
+
+            &:hover {
+                border-left: 1px solid $disabledBtn-color;
+                background-color: $bgTopButton-color;
+                .topMenuButton--onTopNavbar-body-icon {
+                    background-color: $headers-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.index__subpage {
+    @extend %subpage;
+    @extend .index__subpage--personalData;
+    @extend .index__subpage--postback;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    &--chat {
+        width: 1074px;
+        height: 540px;
+        
+        .subpage__form {
+            &-pieceOfTheForm {
+                padding: 20px 15px;   
+
+                &--chatContainer {
+                    height: 290px;                  
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                h4 {
+                    margin: 0;
+                }
+
+                .contact-person-image {
+                    border-radius: 50%;
+                }
+
+                &-bubleContainer {
+                    width: 100%;
+                
+                }
+
+                .inputPassContainer {
+                    i {
+                        color: $headers-color;
+                    }
+
+                    input {
+                        padding: 10px 15px;
+                    }
+
+                }
+
+                &-groupContainer {
+                    padding: 0 10px;
+
+                    button {
+                        width: 100%;
+                    }
+                }   
+            }
+        }        
+    }
+}    

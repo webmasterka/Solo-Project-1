@@ -1,0 +1,160 @@
+.table {
+    border-spacing: 0;
+    width: 100%;
+
+    &-thead {
+        &-tr {
+            border: none;
+            
+            &:hover {
+				background-color: transparent;
+            }
+            
+            &-th {
+                
+                &-thContainer {
+                    margin: 20px 0;
+                    padding: 8px 18px;
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+			        justify-content: left;
+			        font: $thTable-font;
+                    color: $headers-color;
+                    
+                    &-arrowUp {
+                        margin: 0 0 0 10px;
+                        visibility: hidden;
+                        display: inline-flex;
+                        width: 6px;
+                        height: 6px;
+                        border: solid $tableArrowUp-color;
+                        cursor: pointer;
+                        border-color: $text-color;
+                        border-width: 1px 0 0 1px;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+
+                    &:hover {
+                        background-color: $bgTableHover-color;
+					    color: $text-color;
+
+                        .table-thead-tr-th-thContainer-arrowUp {
+                            visibility: visible;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    &-tbody {
+        
+        &-tr {
+            width: 100%;
+            
+            &-td {
+                border-bottom: 1px solid $disabledBtn-color;
+                border-top: 1px solid $disabledBtn-color;
+                
+                &-tdContainer {
+                    padding: 0 18px;
+                    font: $tdTableSorted-font;
+					color: $text-color;
+                }
+            }
+            
+            &:hover {
+				background-color: $bgTableHover-color;
+            }
+            
+            &:first-child {
+                .table-tbody-tr-td {
+                    border-top: 2px solid $disabledBtn-color;
+                }  
+            }
+    
+            &:last-child {
+                .table-tbody-tr-td {
+                    border-bottom: 2px solid $disabledBtn-color;
+                }  
+            }
+        }
+    }
+
+    &-tr {        
+        width: 100%;
+        
+
+        &:hover {
+			background-color: $bgTableHover-color;
+        }
+        
+        &-td {
+            padding: 0;
+            width: calc(100% / 2);
+            border-bottom: 1px solid $disabledBtn-color;
+		    border-top: 1px solid $disabledBtn-color;
+
+            &-tdContainer {
+                width: 100%;
+                height: 58px;
+                display: flex;
+		        align-items: center;
+		    }
+        }
+
+        &-td:first-child {          
+            .table-tr-td-tdContainer {
+                color: $headers-color;
+                font: $tablesLineHeader-font;
+                justify-content: flex-start;
+            }    
+		}
+
+		&-td:nth-child(2) {
+            .table-tr-td-tdContainer {
+                font: $largeLink-font;
+                justify-content: flex-end;
+            }   
+        }
+        
+        &:first-child {
+            .table-tr-td {
+                border-top: 2px solid $disabledBtn-color;
+            }  
+        }
+
+        &:last-child {
+            .table-tr-td {
+                border-bottom: 2px solid $disabledBtn-color;
+            }  
+        }
+        
+        &--withLink {
+           padding: 0 18px;
+           
+           .table-tr-td-tdContainer {
+                align-items: center;
+            }
+        }
+
+        &--withDigit {
+                          
+            .table-tr-td-tdContainer {
+                padding: 0 0 10px 0;
+                align-items: flex-end;
+            }
+
+            &:first-child {
+                .table-tbody-tr-td, .table-tr-td {
+                    border-top: none;
+                }  
+            }
+        }
+    }   
+}
+

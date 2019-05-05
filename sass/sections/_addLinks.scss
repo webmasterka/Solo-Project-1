@@ -1,0 +1,80 @@
+.index__subpage {
+    @extend %subpage;
+    @extend .index__subpage--personalData;
+    @extend .index__subpage--postback;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    &--addLinks, &--addBanners {
+        width: 1074px;
+        height: 764px;
+
+        .subpage__form {
+            &-pieceOfTheForm {
+                padding: 20px 0;
+
+                &:last-child {
+                    padding: 20px 0;
+                    border-bottom: none;
+                }
+
+                &-label {
+                    padding: 0 16px;
+
+                    &-central {
+                        padding: 0;
+                    }
+                }
+
+                &-inputContainer {
+                    padding: 0 16px;
+
+                    &-central {
+                        padding: 0;
+                    }
+                    
+                    img {
+                        margin: 0 0 0 15px;
+                    }
+                    
+                }
+
+                h2 {
+                    margin-top: 0;
+                    padding: 0 16px;
+                }
+
+                &-scrollContainer {
+                    height: 370px;
+
+                    &::-webkit-scrollbar {
+                        width: 16px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        background-color: $walletP-color;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $disabledBtn-color;
+                        outline: 1px solid slategrey;
+                    }
+                }
+
+                &-groupContainer {
+                    padding: 0 16px;
+                    width: 100%;
+                    display: flex;
+                }
+
+                button {
+                    margin: 0;
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}

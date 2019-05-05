@@ -1,0 +1,79 @@
+form {
+    .inputContainer {
+        padding-left: 38px;
+        margin-bottom: 10px;
+        min-width: 40px;
+        height: 44;
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        font: $text-font;
+        justify-content: space-between;   
+        align-items: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        /* Hide the browser's default checkbox */
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            
+            /* When the checkbox is checked, add a green background */
+            &:checked ~ .checkmark {
+                background-color: $greenCheckBox-color;
+                border: 1px solid $greenCheckBox-color;
+                
+                /* Show the checkmark when checked */
+                &:after {
+                    display: block;
+                }
+            }
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+            margin: 0 10px;
+            position: absolute;
+            top: 2;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: $btnFont-color;
+            border: 1px solid $disabledBtn-color;
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+
+                /* Style the checkmark/indicator */
+                left: 5px;
+                top: 1px;
+                width: 4px;
+                height: 9px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+
+        & > .show {
+            display: none;	
+        }
+
+        &:hover {
+            background-color: $bgCheckBoxHover;
+                            
+            & > .show {
+                margin: 0 10px;
+                display: inline-flex;
+            }
+        }
+    }
+}	

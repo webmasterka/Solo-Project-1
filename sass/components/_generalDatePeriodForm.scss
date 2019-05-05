@@ -1,0 +1,18 @@
+.subpage__periodForm {
+    padding: 30px 15px;
+    width: 100%;
+    display: inline-flex;
+    border-bottom: 2px solid $disabledBtn-color;
+    justify-content: center;
+    align-items: center;
+    
+    &-inputDateContainer {
+        margin: 0;
+        min-width: 325px;
+        display: inline-flex;
+    }
+    
+    &-btn-icon {			
+        color: $btnFont-color;	
+    }
+}
