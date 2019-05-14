@@ -34,37 +34,37 @@
                 <nav class="leftColumn__leftNavbar">
                     <ul class="leftNavbar__menu">
                         <li class="leftNavbar__menu-item">
-                            <a class="leftNavbar__menu-item-link" href="#general">
+                            <a class="leftNavbar__menu-item-link" id='general' href="#" >
                                 <i class="leftNavbar__menu-item-link-icon icon-general"></i>
                                 General</a>
                         </li>
                         <li class="leftNavbar__menu-item">
-                            <a class="leftNavbar__menu-item-link" href="#details">
+                            <a class="leftNavbar__menu-item-link" id='details' href="#">
                                 <i class="leftNavbar__menu-item-link-icon icon-details"></i>
                                 Details</a>
                         </li>
                         <li class="leftNavbar__menu-item">
-                            <a class="leftNavbar__menu-item-link" href="#links">
+                            <a class="leftNavbar__menu-item-link" id='links' href="#">
                                 <i class="leftNavbar__menu-item-link-icon leftNavbar__menu-item-link-icon--links icon-links"></i>
                                 Links</a>
                         </li>
                         <li class="leftNavbar__menu-item">
-                            <a class="leftNavbar__menu-item-link" href="#banners">
+                            <a class="leftNavbar__menu-item-link" id='banners' href="#">
                                 <i class="leftNavbar__menu-item-link-icon icon-banners"></i>
                                 Banners</a>
                         </li>
                         <li class="leftNavbar__menu-item">
-                            <a class="leftNavbar__menu-item-link" href="#personalData">
+                            <a class="leftNavbar__menu-item-link" id='personal' href="#">
                                 <i class="leftNavbar__menu-item-link-icon icon-personaldata"></i>
                                 Personal data</a>
                         </li>
                         <li class="leftNavbar__menu-item">
-                            <a class="leftNavbar__menu-item-link" href="#payout">
+                            <a class="leftNavbar__menu-item-link" id='payout' href="#">
                                 <i class="leftNavbar__menu-item-link-icon icon-payout"></i>
                                 Payout</a>
                         </li>
                         <li class="leftNavbar__menu-item">
-                            <a class="leftNavbar__menu-item-link" href="#postback">
+                            <a class="leftNavbar__menu-item-link" id='postback' href="#">
                                 <i class="leftNavbar__menu-item-link-icon icon-postback"></i>
                                 Postback</a>
                         </li>
@@ -109,7 +109,7 @@
             </div>
             <div class="col-sm-12 col-md-8 col-lg-9 col-xl-10 col-offset-md-4 col-offset-lg-3 col-offset-xl-2">
                 <main class="index">
-                    <section class="index__subpage index__subpage--general" id="general">
+                    <section class="index__subpage index__subpage--general hg" id="general">
                         <h1 class="subpage__pageHeader">General statistic</h1>
                         <form class="subpage__periodForm">
                             <div class="subpage__periodForm-inputDateContainer">
@@ -124,7 +124,6 @@
                         </form>
                         <div class="container-fluid">
                             <div class="row">
-                                <!-- <div class="col-xl-2"></div> -->
                                 <div class="col-sm-12 col-md-5 col-offset-md-1 col-lg-4 col-offset-lg-2 col-xl-4 col-offset-xl-2">
                                     <table class="subpage__table subpage__table--left table">
                                         <tr class="subpage__table-tr subpage__table-tr--withDigit table-tr table-tr--withDigit">
@@ -165,12 +164,10 @@
                                         </tr>
                                     </table>
                                 </div>
-                                <!-- <div class="col-xl-2"></div> -->
                             </div>
                         </div>
                         <div class="container-fluid">
                             <div class="row">
-                                <!-- <div class="col-xl-2"></div> -->
                                 <div class="col-sm-12 col-md-10 col-offset-md-1 col-offsetR-md-1 col-lg-8 col-offset-lg-2 col-offsetR-lg-2 col-xl-8 col-offset-xl-2 col-offsetR-xl-2">
                                     <h2 class="subpage__componentHeader">Earnings chart</h2>
                                     <ul class="subpage__colorTabs">
@@ -193,22 +190,14 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <!--    <div id="colorTab1">
-                                        <p>Lorem ipsum dolor sit amet enim.</p>    
-                                    </div>
-                                    <div id="colorTab2">
-                                        <p>Nulla imperdiet sit amet magna.</p>    
-                                    </div> -->
-                                    <div class="subpage__tabContainer subpage__tabContainer--earned" id="colorTab3">
-                                        <!-- <img class="subpage__tabContainer--earned-img" src="/images/earningChart.png" alt="Earnings chart"> -->
+                                    <div class="subpage__tabContainer subpage__tabContainer--earned" id="colorTab3"> 
                                         <canvas id="myChart"></canvas>
                                     </div>
                                 </div>
-                                <!-- <div class="col-xl-2"></div> -->
                             </div>
                         </div>
                     </section>
-                    <section class="index__subpage index__subpage--details" id="details">
+                    <section class="index__subpage index__subpage--details hd" id="details">
                         <h1 class="subpage__pageHeader">Detail statistic</h1>
                         <form class="subpage__periodForm">
                             <div class="subpage__periodForm-inputDateContainer">
@@ -834,7 +823,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="index__subpage index__subpage--Links" id="links">
+                    <section class="index__subpage index__subpage--Links hl" id="links">
                         <h1 class="subpage__pageHeader">Links</h1>
                         <div class="container-fluid">
                             <div class="row">
@@ -1697,7 +1686,7 @@
                         </section>
                     </div>
 
-                    <section class="index__subpage index__subpage--banners" id="banners">
+                    <section class="index__subpage index__subpage--banners hb" id="banners">
                         <h1 class="subpage__pageHeader">Banners</h1>
                         <div class="container-fluid">
                             <div class="row">
@@ -1812,7 +1801,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="index__subpage index__subpage--personalData" id="personalData">
+                    <section class="index__subpage index__subpage--personalData hpd" id="personalData">
                         <h1 class="subpage__pageHeader">Personal data</h1>
                         <form class="subpage__form subpage--personalData__form form">
                             <div class="subpage__form-pieceOfTheForm">
@@ -1948,7 +1937,7 @@
                             </div>
                         </form>
                     </section>
-                    <section class="index__subpage index__subpage--payout" id="payout">
+                    <section class="index__subpage index__subpage--payout hph" id="payout">
                         <h1 class="subpage__pageHeader">Payout history</h1>
                         <form class="subpage__periodForm">
                             <div class="subpage__periodForm-inputDateContainer">
@@ -2195,7 +2184,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="index__subpage index__subpage--postback" id="postback">
+                    <section class="index__subpage index__subpage--postback hnp" id="postback">
                         <h1 class="subpage__pageHeader">New postback</h1>
                         <div class="container-fluid">
                             <div class="row">

@@ -7,5 +7,10 @@
 @import "sections";
 		
 .index {
-	background-color: $bgTopButton-color; 
+	background-color: $bgTopButton-color;
+	margin-top: 35px; 
+}
+
+.hide {
+	display: none;
 }

@@ -114,3 +114,94 @@ var chart = new Chart(ctx, {
     },
 });
 
+var showg = document.getElementById('general');
+var showd = document.getElementById('details');
+var showl = document.getElementById('links');
+var showb = document.getElementById('banners');
+var showp = document.getElementById('personal');
+var showpy = document.getElementById('payout');
+var showpb = document.getElementById('postback');
+var general = document.querySelector('.hg');
+var details = document.querySelector('.hd');
+var links = document.querySelector('.hl');
+var banners = document.querySelector('.hb');
+var persdat = document.querySelector('.hpd');
+var payhist = document.querySelector('.hph');
+var newpost = document.querySelector('.hnp');
+
+showg.addEventListener('click',function() { 
+    console.log("Hello world!");
+    general.classList.remove('hide');
+    details.classList.add('hide');
+    links.classList.add('hide');
+    banners.classList.add('hide');
+    persdat.classList.add('hide');
+    payhist.classList.add('hide');
+    newpost.classList.add('hide');
+});
+
+showd.addEventListener('click',function() { 
+    console.log("Hello world!");
+    details.classList.remove('hide');
+    general.classList.add('hide');
+    links.classList.add('hide');
+    banners.classList.add('hide');
+    persdat.classList.add('hide');
+    payhist.classList.add('hide');
+    newpost.classList.add('hide');
+});
+
+showl.addEventListener('click',function() { 
+    console.log("Hello world!");
+    links.classList.remove('hide');
+    general.classList.add('hide');
+    details.classList.add('hide');
+    banners.classList.add('hide');
+    persdat.classList.add('hide');
+    payhist.classList.add('hide');
+    newpost.classList.add('hide');
+});
+
+showb.addEventListener('click',function() { 
+    console.log("Hello world!");
+    banners.classList.remove('hide');
+    general.classList.add('hide');
+    links.classList.add('hide');
+    details.classList.add('hide');
+    persdat.classList.add('hide');
+    payhist.classList.add('hide');
+    newpost.classList.add('hide');
+});
+
+showp.addEventListener('click',function() { 
+    console.log("Hello world!");
+    persdat.classList.remove('hide');
+    general.classList.add('hide');
+    links.classList.add('hide');
+    banners.classList.add('hide');
+    details.classList.add('hide');
+    payhist.classList.add('hide');
+    newpost.classList.add('hide');
+});
+
+showpy.addEventListener('click',function() { 
+    console.log("Hello world!");
+    payhist.classList.remove('hide');
+    general.classList.add('hide');
+    links.classList.add('hide');
+    banners.classList.add('hide');
+    persdat.classList.add('hide');
+    details.classList.add('hide');
+    newpost.classList.add('hide');
+});
+
+showpb.addEventListener('click',function() { 
+    console.log("Hello world!");
+    newpost.classList.remove('hide');
+    general.classList.add('hide');
+    links.classList.add('hide');
+    banners.classList.add('hide');
+    persdat.classList.add('hide');
+    payhist.classList.add('hide');
+    details.classList.add('hide');
+});
