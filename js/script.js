@@ -9,6 +9,19 @@ document.getElementById("hambuger").addEventListener('click', function (e) {
     toggleMenu()
 });
 
+function myFunction(x) {
+    
+if (x.matches) { // If media query matches
+        toggleMenu();
+    } else {
+        toggleMenu();
+    }
+}
+  
+var x = window.matchMedia("(max-width: 767px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
 // =========================
 // ======= MODALS ==========
 //==========================
@@ -129,79 +142,43 @@ var persdat = document.querySelector('.hpd');
 var payhist = document.querySelector('.hph');
 var newpost = document.querySelector('.hnp');
 
-showg.addEventListener('click',function() { 
-    console.log("Hello world!");
-    general.classList.remove('hide');
+function toggleclass(selector) {
+
+    general.classList.add('hide');
     details.classList.add('hide');
     links.classList.add('hide');
     banners.classList.add('hide');
     persdat.classList.add('hide');
     payhist.classList.add('hide');
-    newpost.classList.add('hide');
+    newpost.classList.add('hide');   
+    selector.classList.remove('hide');
+
+}
+
+showg.addEventListener('click',function() { 
+    toggleclass(general);
 });
 
 showd.addEventListener('click',function() { 
-    console.log("Hello world!");
-    details.classList.remove('hide');
-    general.classList.add('hide');
-    links.classList.add('hide');
-    banners.classList.add('hide');
-    persdat.classList.add('hide');
-    payhist.classList.add('hide');
-    newpost.classList.add('hide');
+    toggleclass(details);
 });
 
 showl.addEventListener('click',function() { 
-    console.log("Hello world!");
-    links.classList.remove('hide');
-    general.classList.add('hide');
-    details.classList.add('hide');
-    banners.classList.add('hide');
-    persdat.classList.add('hide');
-    payhist.classList.add('hide');
-    newpost.classList.add('hide');
+    toggleclass(links);
 });
 
 showb.addEventListener('click',function() { 
-    console.log("Hello world!");
-    banners.classList.remove('hide');
-    general.classList.add('hide');
-    links.classList.add('hide');
-    details.classList.add('hide');
-    persdat.classList.add('hide');
-    payhist.classList.add('hide');
-    newpost.classList.add('hide');
+    toggleclass(banners);
 });
 
 showp.addEventListener('click',function() { 
-    console.log("Hello world!");
-    persdat.classList.remove('hide');
-    general.classList.add('hide');
-    links.classList.add('hide');
-    banners.classList.add('hide');
-    details.classList.add('hide');
-    payhist.classList.add('hide');
-    newpost.classList.add('hide');
+    toggleclass(persdat);
 });
 
 showpy.addEventListener('click',function() { 
-    console.log("Hello world!");
-    payhist.classList.remove('hide');
-    general.classList.add('hide');
-    links.classList.add('hide');
-    banners.classList.add('hide');
-    persdat.classList.add('hide');
-    details.classList.add('hide');
-    newpost.classList.add('hide');
+    toggleclass(payhist);
 });
 
 showpb.addEventListener('click',function() { 
-    console.log("Hello world!");
-    newpost.classList.remove('hide');
-    general.classList.add('hide');
-    links.classList.add('hide');
-    banners.classList.add('hide');
-    persdat.classList.add('hide');
-    payhist.classList.add('hide');
-    details.classList.add('hide');
+    toggleclass(newpost);
 });
